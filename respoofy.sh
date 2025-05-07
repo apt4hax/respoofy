@@ -33,7 +33,7 @@ blue "DMARC pct: "; pink "$DMARC_PCT"; echo
 blue "DMARC aspf: "; pink "$DMARC_ASPF"; echo
 blue "DMARC Subdomain Policy: "; pink "$DMARC_SUB"; echo
 
-echo
+
 blue "Verdict: "
 if [[ "$SPF_ALL" == "~all" || "$SPF_ALL" == "?all" ]]; then
     if [[ "$DMARC_POLICY" == "none" || "$DMARC_POLICY" == "Not Found" ]]; then
